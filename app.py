@@ -23,7 +23,7 @@ def index():
     # Get unique countries
     unique_countries = df["country_name"].unique()
     
-    # Optional: get more info per country if needed
+    # Optional: get more info
     filtered_df = df[df["country_name"].isin(unique_countries)]
 
     # Send to template
